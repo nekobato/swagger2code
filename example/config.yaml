@@ -1,0 +1,7 @@
+template:
+  path: template
+  ext: .ejs
+input: swagger.yaml
+output:
+  path: dist
+  ext: .js

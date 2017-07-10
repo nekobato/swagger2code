@@ -1,0 +1,30 @@
+{
+  "name": "swagger2code",
+  "version": "0.0.1",
+  "description": "Generate swagger file to Templates, a differennt way from swagger-codegen",
+  "main": "bin/swagger2code",
+  "scripts": {
+    "start": "./bin/swagger2code",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekobato/swagger2code.git"
+  },
+  "keywords": [
+    "swagger"
+  ],
+  "author": "nekobato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekobato/swagger2code/issues"
+  },
+  "homepage": "https://github.com/nekobato/swagger2code#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "erb": "^1.2.2",
+    "lodash": "^4.17.4",
+    "meow": "^3.7.0",
+    "swagger-parser": "^3.4.1"
+  }
+}
