@@ -4,19 +4,22 @@
 const args = require('../lib/args')
 const generator = require('../lib/generator')
 
-if (!args.flags.template) {
-  console.error('required: --template [template dir path]')
-  process.exit(1)
-}
+if (!args.flags.config) {
 
-if (!args.flags.input) {
-  console.error('required: --input [template file path]')
-  process.exit(1)
-}
+  if (!args.flags.template) {
+    console.error('required: --template [template dir path]')
+    process.exit(1)
+  }
 
-if (!args.flags.language) {
-  console.error('required: --language [language extension]')
-  process.exit(1)
+  if (!args.flags.input) {
+    console.error('required: --input [template file path]')
+    process.exit(1)
+  }
+
+  if (!args.flags.language) {
+    console.error('required: --language [language extension]')
+    process.exit(1)
+  }
 }
 
 generator.generate(args)
