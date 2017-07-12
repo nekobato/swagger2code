@@ -1,6 +1,6 @@
 {
   "name": "swagger2code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate swagger file to Templates, a differennt way from swagger-codegen",
   "main": "bin/swagger2code",
   "scripts": {
